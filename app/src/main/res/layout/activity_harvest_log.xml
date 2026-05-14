@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/honey_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📝 ಸಂಗ್ರಹ ದಾಖಲೆ"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/honey_brown"
+            android:gravity="center"
+            android:padding="16dp"/>
+
+        <!-- Date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📅 ದಿನಾಂಕ (Date)"
+            android:textSize="14sp"
+            android:textColor="@color/text_dark"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DD/MM/YYYY"
+            android:inputType="date"
+            android:background="@android:drawable/edit_text"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Location -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📍 ಸ್ಥಳ (Location)"
+            android:textSize="14sp"
+            android:textColor="@color/text_dark"/>
+
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. Coorg Forest"
+            android:inputType="text"
+            android:background="@android:drawable/edit_text"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Quantity -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚖️ ಪ್ರಮಾಣ (Quantity in kg)"
+            android:textSize="14sp"
+            android:textColor="@color/text_dark"/>
+
+        <EditText
+            android:id="@+id/etQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. 5.5"
+            android:inputType="numberDecimal"
+            android:background="@android:drawable/edit_text"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Floral Source -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌸 ಹೂವಿನ ಮೂಲ (Floral Source)"
+            android:textSize="14sp"
+            android:textColor="@color/text_dark"/>
+
+        <RadioGroup
+            android:id="@+id/rgFloralSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:padding="8dp">
+
+            <RadioButton
+                android:id="@+id/rbCoffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="☕ Coffee Blossom"
+                android:textSize="14sp"
+                android:buttonTint="@color/honey_yellow"/>
+
+            <RadioButton
+                android:id="@+id/rbWildflower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌼 Wildflower"
+                android:textSize="14sp"
+                android:buttonTint="@color/honey_yellow"/>
+
+            <RadioButton
+                android:id="@+id/rbForest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌳 Forest Honey"
+                android:textSize="14sp"
+                android:buttonTint="@color/honey_yellow"/>
+
+            <RadioButton
+                android:id="@+id/rbLitchi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍈 Litchi Blossom"
+                android:textSize="14sp"
+                android:buttonTint="@color/honey_yellow"/>
+
+        </RadioGroup>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💾 ಉಳಿಸಿ (Save Entry)"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/honey_dark"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Saved Entries List Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 ಹಿಂದಿನ ದಾಖಲೆಗಳು (Previous Entries)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/honey_brown"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Entries will appear here -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEntries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+
+    </LinearLayout>
+</ScrollView>

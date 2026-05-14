@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/honey_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📦 ಬ್ಯಾಚ್ ಟ್ರ್ಯಾಕರ್"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/honey_brown"
+            android:gravity="center"
+            android:padding="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All saved harvest batches appear here"
+            android:textSize="14sp"
+            android:textColor="@color/text_grey"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBatches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+
+        <TextView
+            android:id="@+id/tvNoBatches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No batches yet!\nGo to Harvest Log to add entries."
+            android:textSize="16sp"
+            android:textColor="@color/text_grey"
+            android:gravity="center"
+            android:padding="32dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>

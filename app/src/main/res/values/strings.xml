@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Jenu-Gumpu</string>
+    <string name="tagline">ಜೇನು ಬೇಟೆಗಾರರ ಸಂಘ</string>
+    <string name="harvest_log">ಸಂಗ್ರಹ ದಾಖಲೆ</string>
+    <string name="grading_tool">ಗ್ರೇಡಿಂಗ್ ಮಾರ್ಗದರ್ಶಿ</string>
+    <string name="price_monitor">ಬೆಲೆ ಮಾನಿಟರ್</string>
+    <string name="batch_tracker">ಬ್ಯಾಚ್ ಟ್ರ್ಯಾಕರ್</string>
+    <string name="profit_calc">ಲಾಭ ಲೆಕ್ಕಾಚಾರ</string>
+    <string name="collective_stock">ಒಟ್ಟು ಸ್ಟಾಕ್</string>
+</resources>
